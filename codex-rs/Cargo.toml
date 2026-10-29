@@ -166,6 +166,7 @@ members = [
     "plugin",
     "model-provider",
 ]
+exclude = ["vendor/seccompiler"]
 resolver = "2"
 
 [workspace.package]
@@ -668,6 +669,7 @@ inherits = "test"
 opt-level = 0
 
 [patch.crates-io]
+seccompiler = { path = "vendor/seccompiler" }
 # Uncomment to debug local changes.
 # ratatui = { path = "../../ratatui" }
 crossterm = { git = "https://github.com/openai-oss-forks/crossterm", rev = "ed1cdab335221515706178d68495bba2aed1924f" }
